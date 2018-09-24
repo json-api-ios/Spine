@@ -162,7 +162,7 @@ class SerializeOperation: Operation {
 		
 		if let resources = linkedResources?.resources {
 			resourceIdentifiers = resources.filter { $0.id != nil }.map { resource in
-				return ResourceIdentifier(type: resource.resourceType, id: resource.id!)
+				return ResourceIdentifier(type: resource.resourceType, id: resource.id!, meta: nil)
 			}
 		}
 		

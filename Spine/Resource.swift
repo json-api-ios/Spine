@@ -18,10 +18,14 @@ public struct ResourceIdentifier: Equatable {
 	/// The resource ID.
 	public private(set) var id: String
 
-	/// Constructs a new ResourceIdentifier instance with given `type` and `id`.
-	init(type: ResourceType, id: String) {
+	/// Optional non-standard meta-information.
+	public private(set) var meta: [String: Any]?
+	
+	/// Constructs a new ResourceIdentifier instance with given `type`, `id` and `meta`.
+	init(type: ResourceType, id: String, meta: [String: Any]?) {
 		self.type = type
 		self.id = id
+		self.meta = meta
 	}
 
 	/// Constructs a new ResourceIdentifier instance from the given dictionary.
@@ -29,11 +33,16 @@ public struct ResourceIdentifier: Equatable {
 	init(dictionary: NSDictionary) {
 		type = dictionary["type"] as! ResourceType
 		id = dictionary["id"] as! String
+		meta = dictionary["meta"] as? [String: Any]
 	}
 
 	/// Returns a dictionary with "type" and "id" keys containing the type and id.
 	public func toDictionary() -> NSDictionary {
-		return ["type": type, "id": id]
+		var dictionary: [String: Any] = ["type": type, "id": id]
+		if let meta = meta {
+			dictionary["meta"] = meta
+		}
+		return dictionary as NSDictionary
 	}
 }
 
