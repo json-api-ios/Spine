@@ -18,7 +18,10 @@ public class Serializer {
 	
 	/// The key formatter used for formatting field names to keys.
 	public var keyFormatter: KeyFormatter = AsIsKeyFormatter()
-	
+
+    /// If true, skip parsing of a resource and logs a warning but do not throw an error.
+    public var skipUnknownResourceType: Bool = false
+
 	public init() {}
 
 	/// Deserializes the given data into a JSONAPIDocument.
@@ -30,7 +33,7 @@ public class Serializer {
 	///
 	/// - returns: A JSONAPIDocument
 	public func deserializeData(_ data: Data, mappingTargets: [Resource]? = nil) throws -> JSONAPIDocument {
-		let deserializeOperation = DeserializeOperation(data: data, resourceFactory: resourceFactory, valueFormatters: valueFormatters, keyFormatter: keyFormatter)
+        let deserializeOperation = DeserializeOperation(data: data, resourceFactory: resourceFactory, valueFormatters: valueFormatters, keyFormatter: keyFormatter, skipUnknownResourceType: skipUnknownResourceType)
 		
 		if let mappingTargets = mappingTargets {
 			deserializeOperation.addMappingTargets(mappingTargets)

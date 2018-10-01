@@ -19,6 +19,7 @@ class DeserializeOperation: Operation {
 	fileprivate let valueFormatters: ValueFormatterRegistry
 	fileprivate let resourceFactory: ResourceFactory
 	fileprivate let keyFormatter: KeyFormatter
+    fileprivate let skipUnknownResourceType: Bool
 	
 	// Extracted objects
 	fileprivate var extractedPrimaryResources: [Resource]?
@@ -35,11 +36,12 @@ class DeserializeOperation: Operation {
 	
 	// MARK: -
 	
-	init(data: Data, resourceFactory: ResourceFactory, valueFormatters: ValueFormatterRegistry, keyFormatter: KeyFormatter) {
+    init(data: Data, resourceFactory: ResourceFactory, valueFormatters: ValueFormatterRegistry, keyFormatter: KeyFormatter, skipUnknownResourceType: Bool = false) {
 		self.data = JSON(data)
 		self.resourceFactory = resourceFactory
 		self.valueFormatters = valueFormatters
 		self.keyFormatter = keyFormatter
+        self.skipUnknownResourceType = skipUnknownResourceType
 	}
 
 	
@@ -79,7 +81,14 @@ class DeserializeOperation: Operation {
 			if let data = data["data"].array {
 				var resources: [Resource] = []
 				for (index, representation) in data.enumerated() {
-					try resources.append(deserializeSingleRepresentation(representation, mappingTargetIndex: index))
+                    do {
+                        try resources.append(deserializeSingleRepresentation(representation, mappingTargetIndex: index))
+                    } catch SerializerError.resourceTypeUnregistered(let resourceType) {
+                        Spine.logWarning(.serializing, "Cannot perform deserialization for resource type '\(resourceType)' because it is not registered.")
+                        if !skipUnknownResourceType {
+                            throw SerializerError.resourceTypeUnregistered(resourceType)
+                        }
+                    }
 				}
 				extractedPrimaryResources = resources
 			} else if let _ = data["data"].dictionary {
