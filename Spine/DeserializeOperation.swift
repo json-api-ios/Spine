@@ -309,7 +309,7 @@ class DeserializeOperation: Operation {
 			let linkURL: URL? = linkData["links"]?["self"].url
 			
 			if let linkage = linkData["data"]?.array {
-				let mappedLinkage = linkage.map { ResourceIdentifier(type: $0["type"].stringValue, id: $0["id"].stringValue) }
+				let mappedLinkage = linkage.map { ResourceIdentifier(type: $0["type"].stringValue, id: $0["id"].stringValue, meta: $0["meta"].dictionaryObject) }
 				resourceCollection = LinkedResourceCollection(resourcesURL: resourcesURL, linkURL: linkURL, linkage: mappedLinkage)
 			} else {
 				resourceCollection = LinkedResourceCollection(resourcesURL: resourcesURL, linkURL: linkURL, linkage: nil)
@@ -330,10 +330,10 @@ class DeserializeOperation: Operation {
 		let data: [ResourceIdentifier]?
 		
 		if let toOne = linkData["data"].dictionary {
-			data = [ResourceIdentifier(type: toOne["type"]!.stringValue, id: toOne["id"]!.stringValue)]
+			data = [ResourceIdentifier(type: toOne["type"]!.stringValue, id: toOne["id"]!.stringValue, meta: toOne["meta"]?.dictionaryObject)]
 		} else if let toMany = linkData["data"].array {
 			data = toMany.map { JSON -> ResourceIdentifier in
-				return ResourceIdentifier(type: JSON["type"].stringValue, id: JSON["id"].stringValue)
+				return ResourceIdentifier(type: JSON["type"].stringValue, id: JSON["id"].stringValue, meta: JSON["meta"].dictionaryObject)
 			}
 		} else {
 			data = nil
