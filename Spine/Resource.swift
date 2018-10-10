@@ -157,7 +157,7 @@ open class Resource: NSObject, NSCoding {
 	
 	/// Returns the field named `name`, or nil if no such field exists.
 	class func field(named name: String) -> Field? {
-		return fields.filter { $0.name == name }.first
+		return fields.filter { $0.name == name || $0.serializedName == name }.first
 	}
 }
 
