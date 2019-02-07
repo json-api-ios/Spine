@@ -41,6 +41,7 @@ public struct Query<T: Resource> {
 	
 	public internal(set) var pagination: Pagination?
 	
+    public internal(set) var customURLparams: [String: String] = [:]
 	
 	//MARK: Init
 	
@@ -274,6 +275,17 @@ public struct Query<T: Resource> {
 	public mutating func paginate(_ pagination: Pagination?) {
 		self.pagination = pagination
 	}
+    
+    
+    // MARK: Custom URL params
+    
+    /// Add custom URL parameter. Pass value=nil to remove parameter.
+    ///
+    /// - parameter key: key of added parameter
+    /// - parameter value: value of added parameter   (URL...&key=value&...)
+    public mutating func addCustomURLparameter(_ key: String, value: String?) {
+        self.customURLparams[key] = value
+    }
 }
 
 

@@ -176,6 +176,13 @@ open class JSONAPIRouter: Router {
 			}
 		}
 
+        // Custom URL params
+        for itemKey in query.customURLparams.keys {
+            let value = query.customURLparams[itemKey]
+            let item = URLQueryItem(name: itemKey, value: value)
+            appendQueryItem(item, to: &queryItems)
+        }
+        
 		// Compose URL
 		if !queryItems.isEmpty {
 			urlComponents.queryItems = queryItems
