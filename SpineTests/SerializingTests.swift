@@ -328,6 +328,36 @@ class DeserializingTests: SerializerTests {
 			XCTFail("Expected error domain to be SerializerError.TopLevelEntryMissing.")
 		}
 	}
+
+    func testDeserializeTopLevelEntryMetaOnly() {
+        let data = try! JSONSerialization.data(withJSONObject:  ["meta": []], options: [])
+
+        do {
+            try _ = serializer.deserializeData(data)
+        } catch {
+            XCTFail("Expected deserialization to succeed.")
+        }
+    }
+
+    func testDeserializeTopLevelEntryDataOnly() {
+        let data = try! JSONSerialization.data(withJSONObject:  ["data": []], options: [])
+
+        do {
+            try _ = serializer.deserializeData(data)
+        } catch {
+            XCTFail("Expected deserialization to succeed.")
+        }
+    }
+
+    func testDeserializeTopLevelEntryErrorsOnly() {
+        let data = try! JSONSerialization.data(withJSONObject:  ["errors": []], options: [])
+
+        do {
+            try _ = serializer.deserializeData(data)
+        } catch {
+            XCTFail("Expected deserialization to succeed.")
+        }
+    }
 	
 	func testDeserializeWithCoexistingDataAndErrors() {
 		let data = try! JSONSerialization.data(withJSONObject: ["data": [], "errors": []], options: [])
@@ -341,7 +371,7 @@ class DeserializingTests: SerializerTests {
 			XCTFail("Expected error domain to be SerializerError.TopLevelDataAndErrorsCoexist.")
 		}
 	}
-	
+
 	func testDeserializeWithNullData() {
 		let data = try! JSONSerialization.data(withJSONObject: ["data": NSNull()], options: [])
 		

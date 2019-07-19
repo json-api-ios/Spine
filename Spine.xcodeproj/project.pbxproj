@@ -55,10 +55,8 @@
 		240BCA711CD9302E00842222 /* PagedFoos-1.json in Resources */ = {isa = PBXBuildFile; fileRef = D3BE2B1B1AD56C840061167C /* PagedFoos-1.json */; };
 		240BCA721CD9303000842222 /* PagedFoos-2.json in Resources */ = {isa = PBXBuildFile; fileRef = D3BE2B1C1AD56C840061167C /* PagedFoos-2.json */; };
 		240BCA731CD9303300842222 /* Errors.json in Resources */ = {isa = PBXBuildFile; fileRef = D3960DF01A9B5FBC009948B0 /* Errors.json */; };
-		240BCA761CD930BE00842222 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 240BCA751CD930BE00842222 /* Result.framework */; };
 		240BCA781CD930C700842222 /* BrightFutures.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 240BCA771CD930C700842222 /* BrightFutures.framework */; };
 		240BCA7A1CD930CD00842222 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 240BCA791CD930CD00842222 /* SwiftyJSON.framework */; };
-		240BCA7B1CD9312C00842222 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 240BCA751CD930BE00842222 /* Result.framework */; };
 		240BCA7C1CD9312D00842222 /* BrightFutures.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 240BCA771CD930C700842222 /* BrightFutures.framework */; };
 		240BCA7D1CD9313000842222 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 240BCA791CD930CD00842222 /* SwiftyJSON.framework */; };
 		24E6DF5F1D6830FF0072D4DC /* Spine.swift in Sources */ = {isa = PBXBuildFile; fileRef = D373F7A319B224BB00275AFC /* Spine.swift */; };
@@ -78,7 +76,6 @@
 		24E6DF6D1D6830FF0072D4DC /* ValueFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D35F9D471A532EC600E5FF97 /* ValueFormatter.swift */; };
 		24E6DF6E1D6830FF0072D4DC /* KeyFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B96D611C32B7D300910F83 /* KeyFormatter.swift */; };
 		24E6DF731D6831520072D4DC /* BrightFutures.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24E6DF701D6831520072D4DC /* BrightFutures.framework */; };
-		24E6DF741D6831520072D4DC /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24E6DF711D6831520072D4DC /* Result.framework */; };
 		24E6DF751D6831520072D4DC /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24E6DF721D6831520072D4DC /* SwiftyJSON.framework */; };
 		24EA5DB11D2D39A700F3E867 /* SingleFooWithUnregisteredType.json in Resources */ = {isa = PBXBuildFile; fileRef = 24EA5DB01D2D39A100F3E867 /* SingleFooWithUnregisteredType.json */; };
 		24EA5DB21D2D39A800F3E867 /* SingleFooWithUnregisteredType.json in Resources */ = {isa = PBXBuildFile; fileRef = 24EA5DB01D2D39A100F3E867 /* SingleFooWithUnregisteredType.json */; };
@@ -115,10 +112,8 @@
 		D302A6711DA13BC700420C48 /* PagedFoos-1.json in Resources */ = {isa = PBXBuildFile; fileRef = D3BE2B1B1AD56C840061167C /* PagedFoos-1.json */; };
 		D302A6721DA13BC700420C48 /* PagedFoos-2.json in Resources */ = {isa = PBXBuildFile; fileRef = D3BE2B1C1AD56C840061167C /* PagedFoos-2.json */; };
 		D302A6731DA13BC700420C48 /* Errors.json in Resources */ = {isa = PBXBuildFile; fileRef = D3960DF01A9B5FBC009948B0 /* Errors.json */; };
-		D302A6741DA13C1400420C48 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24E6DF711D6831520072D4DC /* Result.framework */; };
 		D302A6751DA13C1400420C48 /* BrightFutures.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24E6DF701D6831520072D4DC /* BrightFutures.framework */; };
 		D302A6761DA13C1400420C48 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24E6DF721D6831520072D4DC /* SwiftyJSON.framework */; };
-		D302A6781DA13CAB00420C48 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D32EA6DC1BCBD5930076CFA5 /* Result.framework */; };
 		D302A6791DA13CAB00420C48 /* BrightFutures.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3411E771A4B5C2C00D27F54 /* BrightFutures.framework */; };
 		D302A67A1DA13CAB00420C48 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3411E7A1A4B5D2200D27F54 /* SwiftyJSON.framework */; };
 		D307FBEE1A97756700EE0FAC /* SingleFooIncludingBars.json in Resources */ = {isa = PBXBuildFile; fileRef = D307FBED1A97756700EE0FAC /* SingleFooIncludingBars.json */; };
@@ -126,7 +121,6 @@
 		D312E30219BB8822004BB3E0 /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37FB17E19B9D7F10073A888 /* Networking.swift */; };
 		D32EA6DA1BCBD5930076CFA5 /* BrightFutures.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3411E771A4B5C2C00D27F54 /* BrightFutures.framework */; };
 		D32EA6DB1BCBD5930076CFA5 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3411E7A1A4B5D2200D27F54 /* SwiftyJSON.framework */; };
-		D32EA6DD1BCBD5930076CFA5 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D32EA6DC1BCBD5930076CFA5 /* Result.framework */; };
 		D331836C19B2302500936FBB /* Query.swift in Sources */ = {isa = PBXBuildFile; fileRef = D331836B19B2302500936FBB /* Query.swift */; };
 		D341907719D30BA4007B38D6 /* Routing.swift in Sources */ = {isa = PBXBuildFile; fileRef = D341907619D30BA4007B38D6 /* Routing.swift */; };
 		D341907D19D31176007B38D6 /* Routing.swift in Sources */ = {isa = PBXBuildFile; fileRef = D341907619D30BA4007B38D6 /* Routing.swift */; };
@@ -166,7 +160,6 @@
 		D39890F71C3D5978005CFB93 /* ResourceFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = D39890F41C3D571F005CFB93 /* ResourceFactory.swift */; };
 		D398E1291DA1538E00FBC6FD /* Spine.h in Headers */ = {isa = PBXBuildFile; fileRef = D373F78D19B2249900275AFC /* Spine.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D398E12A1DA153D500FBC6FD /* Spine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24E6DF481D6830030072D4DC /* Spine.framework */; };
-		D398E1321DA1548C00FBC6FD /* Result.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 24E6DF711D6831520072D4DC /* Result.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D398E1331DA1548C00FBC6FD /* BrightFutures.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 24E6DF701D6831520072D4DC /* BrightFutures.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D398E1341DA1548C00FBC6FD /* SwiftyJSON.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 24E6DF721D6831520072D4DC /* SwiftyJSON.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D398E14F1DA1554E00FBC6FD /* Spine.swift in Sources */ = {isa = PBXBuildFile; fileRef = D373F7A319B224BB00275AFC /* Spine.swift */; };
@@ -186,7 +179,6 @@
 		D398E15D1DA1554E00FBC6FD /* ValueFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D35F9D471A532EC600E5FF97 /* ValueFormatter.swift */; };
 		D398E15E1DA1554E00FBC6FD /* KeyFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B96D611C32B7D300910F83 /* KeyFormatter.swift */; };
 		D398E1631DA1562E00FBC6FD /* BrightFutures.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D398E1601DA1562800FBC6FD /* BrightFutures.framework */; };
-		D398E1641DA1562E00FBC6FD /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D398E1611DA1562800FBC6FD /* Result.framework */; };
 		D398E1651DA1562E00FBC6FD /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D398E1621DA1562800FBC6FD /* SwiftyJSON.framework */; };
 		D398E1671DA1567D00FBC6FD /* Spine.h in Headers */ = {isa = PBXBuildFile; fileRef = D373F78D19B2249900275AFC /* Spine.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D39929EB1A52F3A0008BF0A9 /* ResourceField.swift in Sources */ = {isa = PBXBuildFile; fileRef = D39929EA1A52F3A0008BF0A9 /* ResourceField.swift */; };
@@ -208,7 +200,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				D398E1321DA1548C00FBC6FD /* Result.framework in CopyFiles */,
 				D398E1331DA1548C00FBC6FD /* BrightFutures.framework in CopyFiles */,
 				D398E1341DA1548C00FBC6FD /* SwiftyJSON.framework in CopyFiles */,
 			);
@@ -217,7 +208,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		240BCA751CD930BE00842222 /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/tvOS/Result.framework; sourceTree = "<group>"; };
 		240BCA771CD930C700842222 /* BrightFutures.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BrightFutures.framework; path = Carthage/Build/tvOS/BrightFutures.framework; sourceTree = "<group>"; };
 		240BCA791CD930CD00842222 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/tvOS/SwiftyJSON.framework; sourceTree = "<group>"; };
 		2413110C1CD8F40000527E10 /* Spine.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Spine.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -225,12 +215,10 @@
 		24E6DF481D6830030072D4DC /* Spine.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Spine.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		24E6DF511D6830030072D4DC /* Spine-macOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Spine-macOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		24E6DF701D6831520072D4DC /* BrightFutures.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BrightFutures.framework; path = Carthage/Build/Mac/BrightFutures.framework; sourceTree = "<group>"; };
-		24E6DF711D6831520072D4DC /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/Mac/Result.framework; sourceTree = "<group>"; };
 		24E6DF721D6831520072D4DC /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/Mac/SwiftyJSON.framework; sourceTree = "<group>"; };
 		24EA5DB01D2D39A100F3E867 /* SingleFooWithUnregisteredType.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = SingleFooWithUnregisteredType.json; sourceTree = "<group>"; };
 		D307FBED1A97756700EE0FAC /* SingleFooIncludingBars.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = SingleFooIncludingBars.json; sourceTree = "<group>"; };
 		D312E2F719BB83A8004BB3E0 /* SerializingTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SerializingTests.swift; sourceTree = "<group>"; };
-		D32EA6DC1BCBD5930076CFA5 /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/iOS/Result.framework; sourceTree = "<group>"; };
 		D331836B19B2302500936FBB /* Query.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Query.swift; sourceTree = "<group>"; };
 		D3411E771A4B5C2C00D27F54 /* BrightFutures.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BrightFutures.framework; path = Carthage/Build/iOS/BrightFutures.framework; sourceTree = "<group>"; };
 		D3411E7A1A4B5D2200D27F54 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/iOS/SwiftyJSON.framework; sourceTree = "<group>"; };
@@ -263,7 +251,6 @@
 		D39890F41C3D571F005CFB93 /* ResourceFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResourceFactory.swift; sourceTree = "<group>"; };
 		D398E1471DA1554300FBC6FD /* Spine.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Spine.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D398E1601DA1562800FBC6FD /* BrightFutures.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BrightFutures.framework; path = Carthage/Build/watchOS/BrightFutures.framework; sourceTree = "<group>"; };
-		D398E1611DA1562800FBC6FD /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/watchOS/Result.framework; sourceTree = "<group>"; };
 		D398E1621DA1562800FBC6FD /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/watchOS/SwiftyJSON.framework; sourceTree = "<group>"; };
 		D39929EA1A52F3A0008BF0A9 /* ResourceField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResourceField.swift; sourceTree = "<group>"; };
 		D39CD5371AA0FA8F00049432 /* CallbackHTTPClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CallbackHTTPClient.swift; path = SpineTests/CallbackHTTPClient.swift; sourceTree = SOURCE_ROOT; };
@@ -279,7 +266,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				240BCA761CD930BE00842222 /* Result.framework in Frameworks */,
 				240BCA781CD930C700842222 /* BrightFutures.framework in Frameworks */,
 				240BCA7A1CD930CD00842222 /* SwiftyJSON.framework in Frameworks */,
 			);
@@ -289,7 +275,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				240BCA7B1CD9312C00842222 /* Result.framework in Frameworks */,
 				240BCA7C1CD9312D00842222 /* BrightFutures.framework in Frameworks */,
 				240BCA7D1CD9313000842222 /* SwiftyJSON.framework in Frameworks */,
 			);
@@ -300,7 +285,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				24E6DF731D6831520072D4DC /* BrightFutures.framework in Frameworks */,
-				24E6DF741D6831520072D4DC /* Result.framework in Frameworks */,
 				24E6DF751D6831520072D4DC /* SwiftyJSON.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -309,7 +293,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D302A6741DA13C1400420C48 /* Result.framework in Frameworks */,
 				D302A6751DA13C1400420C48 /* BrightFutures.framework in Frameworks */,
 				D398E12A1DA153D500FBC6FD /* Spine.framework in Frameworks */,
 				D302A6761DA13C1400420C48 /* SwiftyJSON.framework in Frameworks */,
@@ -320,7 +303,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D32EA6DD1BCBD5930076CFA5 /* Result.framework in Frameworks */,
 				D32EA6DA1BCBD5930076CFA5 /* BrightFutures.framework in Frameworks */,
 				D32EA6DB1BCBD5930076CFA5 /* SwiftyJSON.framework in Frameworks */,
 			);
@@ -330,7 +312,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D302A6781DA13CAB00420C48 /* Result.framework in Frameworks */,
 				D302A6791DA13CAB00420C48 /* BrightFutures.framework in Frameworks */,
 				D302A67A1DA13CAB00420C48 /* SwiftyJSON.framework in Frameworks */,
 			);
@@ -341,7 +322,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				D398E1631DA1562E00FBC6FD /* BrightFutures.framework in Frameworks */,
-				D398E1641DA1562E00FBC6FD /* Result.framework in Frameworks */,
 				D398E1651DA1562E00FBC6FD /* SwiftyJSON.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -352,7 +332,6 @@
 		240BCA741CD930A000842222 /* tvOS */ = {
 			isa = PBXGroup;
 			children = (
-				240BCA751CD930BE00842222 /* Result.framework */,
 				240BCA771CD930C700842222 /* BrightFutures.framework */,
 				240BCA791CD930CD00842222 /* SwiftyJSON.framework */,
 			);
@@ -373,7 +352,6 @@
 		245B5DD51CD92E3900E44FBE /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				D32EA6DC1BCBD5930076CFA5 /* Result.framework */,
 				D3411E771A4B5C2C00D27F54 /* BrightFutures.framework */,
 				D3411E7A1A4B5D2200D27F54 /* SwiftyJSON.framework */,
 			);
@@ -383,7 +361,6 @@
 		24E6DF6F1D6831280072D4DC /* macOS */ = {
 			isa = PBXGroup;
 			children = (
-				24E6DF711D6831520072D4DC /* Result.framework */,
 				24E6DF701D6831520072D4DC /* BrightFutures.framework */,
 				24E6DF721D6831520072D4DC /* SwiftyJSON.framework */,
 			);
@@ -508,7 +485,6 @@
 			isa = PBXGroup;
 			children = (
 				D398E1601DA1562800FBC6FD /* BrightFutures.framework */,
-				D398E1611DA1562800FBC6FD /* Result.framework */,
 				D398E1621DA1562800FBC6FD /* SwiftyJSON.framework */,
 			);
 			name = watchOS;
@@ -833,13 +809,12 @@
 			inputPaths = (
 				"$(SRCROOT)/Carthage/Build/tvOS/BrightFutures.framework",
 				"$(SRCROOT)/Carthage/Build/tvOS/SwiftyJSON.framework",
-				"$(SRCROOT)/Carthage/Build/tvOS/Result.framework",
 			);
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "/usr/local/bin/carthage copy-frameworks";
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
 		};
 		D35047881A94F784002FDF57 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -849,13 +824,12 @@
 			inputPaths = (
 				"$(SRCROOT)/Carthage/Build/iOS/BrightFutures.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/SwiftyJSON.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/Result.framework",
 			);
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "/usr/local/bin/carthage copy-frameworks";
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 

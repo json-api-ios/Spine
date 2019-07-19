@@ -69,7 +69,7 @@ class DeserializeOperation: Operation {
 			return
 		}
 
-		guard hasErrors && !hasData || !hasErrors && hasData else {
+		guard (hasErrors && hasData) == false else {
 			let errorMessage = "Top level 'data' and 'errors' must not coexist in the same document.";
 			Spine.logError(.serializing, errorMessage)
 			result = Failable(SerializerError.topLevelDataAndErrorsCoexist)
